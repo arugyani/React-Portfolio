@@ -4,7 +4,7 @@ import '../styles/Navigation.css';
 import { GitHub, LinkedIn } from '@mui/icons-material';
 import FadeComponent from './FadeComponent';
 
-import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
+// import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
 
 function Navigation() {
     return (
@@ -19,7 +19,7 @@ function Navigation() {
                         <li><a className="link redirect" href="https://github.com/AruGyani"><GitHub /></a></li>
                         <li><a className="link redirect" href="https://linkedin.com/in/arugyani"><LinkedIn /></a></li>
                     </ul>
-                    <DarkModeOutlinedIcon className="link redirect darkAnimate"/>
+                    {/* <DarkModeOutlinedIcon className="link redirect darkAnimate"/> */}
                 </navbar>
             </FadeComponent>
         </div>
