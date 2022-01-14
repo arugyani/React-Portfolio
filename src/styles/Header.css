@@ -1,0 +1,138 @@
+.header {
+    height: 90vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.information {
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+}
+
+.introduction {
+    font-size: 55px;
+    font-weight: 500;
+
+    user-select: none;
+}
+
+.introduction .Cursor--blinking {
+    color: var(--night-blue);
+
+    padding-left: 4px;
+
+    animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% { 
+        opacity: 1;
+    }
+}
+
+.name {
+    color: var(--night-blue);
+    font-weight: 700;
+}
+
+.caption {
+    padding-top: 20px;
+    text-align: center;
+    user-select: none;
+
+    font-size: 25px;
+}
+
+.reference {
+    color: #52b69a;
+    font-weight: 700;
+    text-decoration: none;
+
+    display: inline-block;
+    position: relative;
+    padding: 0.2em 0;
+    margin-right: 0.8em;
+    overflow: hidden;
+}
+
+.reference::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1em;
+
+    background-color: #52b69a;
+    transition: opacity 300ms, transform 300ms;
+    opacity: 1;
+    transform: translate3d(-100%, 0, 0);
+}
+
+.reference:hover::after {
+    transform: translate3d(0, 0, 0);
+}
+
+.mouse {
+    width: 3px;
+    padding: 5px 7px;
+    height: 20px;
+
+    border: 2px solid black;
+    border-radius: 25px;
+    opacity: 0.75;
+    box-sizing: content-box;
+
+    transform: translateY(200px);
+    transition: all 0.2s;
+}
+
+.scroller {
+    width: 3px;
+    height: 5px;
+
+    border-radius: 25%;
+    background-color: black;
+    
+    animation-name: scroll;
+    animation-duration: 1.5s;
+    animation-timing-function: cubic-bezier(0.15, 0.41, 0.68, 0.94);
+    animation-iteration-count: infinite;
+}
+
+@keyframes scroll {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(5px); }
+    100% { transform: translateY(0px); }
+}
+
+@media (max-width: 640px) {
+    .header {
+        display: flex;
+        margin-left: 5%;
+        height: 40em;
+
+        text-align: center;
+    }
+
+    .introduction {
+        font-size: 40px;
+    }
+
+    .caption {
+        font-size: 20px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,65 @@
+:root {
+  --slate: #1d3557;
+  --night-blue: #457b9d;
+  --nile-blue: #a8dadc;
+  --pale-green: #f1faee;
+  --red: #e63946;
+  --beige: #fffaf5;
+  --tan: #ffeccc;
+  --green: #52b69a;
+}
+
+.theme-dark {
+  --dark-text: #292929;
+  --light-text: #F9F8F8;  
+  --dark-background: #2F4550;
+  --light-background: #586F7C;
+  --accent: #B8DBD9;
+  --button-border: #B8DBD9;
+}
+
+
+.theme-light {
+  --slate: #1d3557;
+  --night-blue: #457b9d;
+  --nile-blue: #a8dadc;
+  --pale-green: #f1faee;
+  --red: #e63946;
+  --beige: #fffaf5;
+  --tan: #ffeccc;
+  --green: #52b69a;
+}
+
+html {
+  scroll-behavior: smooth;
+
+  
+  width: 100%;
+
+  margin: 0 auto;
+  padding: 0;
+}
+
+body {
+  background-color: var(--beige);
+}
+
+hr {
+  width: 80%;
+  margin-left: 10%;
+
+  opacity: 0.3;
+}
+
+.footer {
+  width: 100%;
+
+  background-color: black;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--tan);
+}
