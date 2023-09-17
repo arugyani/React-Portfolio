@@ -11,13 +11,12 @@
 
 .theme-dark {
   --dark-text: #292929;
-  --light-text: #F9F8F8;  
-  --dark-background: #2F4550;
-  --light-background: #586F7C;
-  --accent: #B8DBD9;
-  --button-border: #B8DBD9;
+  --light-text: #f9f8f8;
+  --dark-background: #2f4550;
+  --light-background: #586f7c;
+  --accent: #b8dbd9;
+  --button-border: #b8dbd9;
 }
-
 
 .theme-light {
   --slate: #1d3557;
@@ -33,7 +32,6 @@
 html {
   scroll-behavior: smooth;
 
-  
   width: 100%;
 
   margin: 0 auto;
@@ -57,9 +55,23 @@ hr {
   background-color: black;
 
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  color: var(--tan);
+  color: #fff;
+}
+
+.footer__links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  width: max-content;
+  padding: 0 32px;
+}
+
+.footer__link {
+  color: #fff !important;
+  padding: 0 12px;
 }
